@@ -4,7 +4,7 @@
 long double s21_fabs(double x) {
     if (x < 0) x *= -1;
     unsigned long n = x;
-    double rest = x - n;
+    long double rest = x - n;
     long double result = n + rest;
     return result;
 }
